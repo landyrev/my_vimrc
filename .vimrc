@@ -1,4 +1,5 @@
 set mouse=a
+syntax on
 set backspace=2
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
@@ -27,10 +28,11 @@ filetype plugin indent on    " required
 "
 
 Plugin 'bling/vim-bufferline'
-
-" Plugin 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+autocmd FileType python setlocal completeopt-=preview
+" Plugin 'Valloric/YouCompleteMe'
 
 nnoremap <F3> :NERDTreeToggle<CR>
 
@@ -40,20 +42,3 @@ nnoremap <F3> :NERDTreeToggle<CR>
 Plugin 'altercation/vim-colors-solarized'
 set background=dark
 colorscheme solarized
-
-"
-" JSX
-"
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'alvan/vim-closetag'
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'jinja' : 1,
-	\ 'js': 1
-    \}
