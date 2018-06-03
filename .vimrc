@@ -10,6 +10,7 @@ set ttymouse=xterm2
 filetype plugin indent on
 let g:ycm_python_binary_path = 'python'
 let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeShowHidden=1
 set shiftwidth=4 				" Fix double indent http://www.linuxquestions.org/questions/linux-software-2/remove-double-tab-indent-on-vim-4175457575/
 
 set nocompatible              " be iMproved, required
