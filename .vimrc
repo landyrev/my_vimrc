@@ -43,3 +43,5 @@ nnoremap <F3> :NERDTreeToggle<CR>
 Plugin 'altercation/vim-colors-solarized'
 set background=dark
 colorscheme solarized
+
+set rtp+=~/.fzf
