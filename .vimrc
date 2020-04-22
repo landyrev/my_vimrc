@@ -8,8 +8,9 @@ set t_Co=256
 set tabstop=4
 set number
 set ttymouse=xterm2
+set expandtab
 filetype plugin indent on
-let g:ycm_python_binary_path = 'python'
+let g:ycm_python_binary_path = 'python3'
 let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeShowHidden=1
 set shiftwidth=4 				" Fix double indent http://www.linuxquestions.org/questions/linux-software-2/remove-double-tab-indent-on-vim-4175457575/
@@ -33,6 +34,7 @@ Plugin 'bling/vim-bufferline'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 autocmd FileType python setlocal completeopt-=preview
 " Plugin 'Valloric/YouCompleteMe'
 
